@@ -1,0 +1,127 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+ background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.game-container {
+    background-color: #33ffff;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.figure-container {
+    margin: 20px 0;
+    height: 200px;
+    position: relative;
+}
+
+
+.figure-part {
+    display: none;
+    position: absolute;
+    background-color: #33ffff;
+}
+
+
+.head {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.body {
+    width: 10px;
+    height: 80px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.left-arm {
+    width: 10px;
+    height: 50px;
+    top: 60px;
+    left: 40%;
+    transform: rotate(-45deg);
+    transform-origin: top;
+}
+
+
+.right-arm {
+    width: 10px;
+    height: 50px;
+    top: 60px;
+    left: 60%;
+    transform: rotate(45deg);
+    transform-origin: top;
+}
+
+
+.left-leg {
+    width: 10px;
+    height: 50px;
+    top: 140px;
+    left: 40%;
+    transform: rotate(-45deg);
+    transform-origin: top;
+}
+
+
+.right-leg {
+    width: 10px;
+    height: 50px;
+    top: 140px;
+    left: 60%;
+    transform: rotate(45deg);
+    transform-origin: top;
+}
+
+
+.word-container {
+    margin: 20px 0;
+}
+
+
+.hidden-word {
+    font-size: 24px;
+    letter-spacing: 10px;
+}
+
+
+.letters-container {
+    margin-top: 20px;
+}
+
+
+#letter-input {
+    padding: 5px;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+}
+
+
+#submit-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
